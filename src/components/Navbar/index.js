@@ -14,7 +14,7 @@ import {
 } from "./styles";
 
 import LogoWeb from "../../images/nolan.jpg";
-
+//import somwht d from ""
 import { i18n } from "../../translate/i18n";
 
 const I18N_STORAGE_KEY = "i18nextLng";
