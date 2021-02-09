@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
-import Icon1 from "../../images/maintenance2.jpg";
-import Icon2 from "../../images/services-1.svg";
-import Icon3 from "../../images/services-2.svg";
+//import Icon1 from "../../images/maintenance2.jpg";
+//import Icon2 from "../../images/services-1.svg";
+//import Icon3 from "../../images/services-2.svg";
 import {
   ServicesContainer,
   ServicesH1,
