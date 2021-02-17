@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
-//import Paulo from "../../images/paulo.png";
-//import Rands from "../../images/rands.png";
+import Paulo from "../../images/factory_training.png";
+import Rands from "../../images/8ca224e3dba831d1753d327f9a1adc27.jpg";
 //import Danix from "../../images/danix.png";
 import { AnimateSharedLayout } from "framer-motion";
 import Aos from "aos";
@@ -21,8 +21,8 @@ function Team() {
   }, []);
   return (
     <AnimateSharedLayout>
-      <ServicesContainer id="team">
-        <ServicesH1>Planos</ServicesH1>
+      <ServicesContainer>
+        {/* <ServicesH1>Planos</ServicesH1> */}
         <ServicesWrapper
           data-aos="fade-up"
           data-aos-easing="ease-in-out"
@@ -31,18 +31,21 @@ function Team() {
           data-aos-anchor-placement="right"
         >
           <ServicesCard>
-            <ServicesIcon />
+            <ServicesIcon src={Paulo} />
           </ServicesCard>
 
           <ServicesCard>
-            <ServicesIcon />
-            <ServicesH2></ServicesH2>
-            <ServicesP></ServicesP>
+            <ServicesIcon src={Rands} />
           </ServicesCard>
 
+          {/*  
           <ServicesCard>
-            <ServicesIcon />
-          </ServicesCard>
+          <ServicesIcon />
+          <ServicesH2></ServicesH2>
+          <ServicesP></ServicesP>
+        </ServicesCard>
+
+         */}
         </ServicesWrapper>
       </ServicesContainer>
     </AnimateSharedLayout>

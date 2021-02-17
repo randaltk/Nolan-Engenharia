@@ -21,15 +21,18 @@ export const homeObjTwo = {
   lightBg: true,
   lightText: false,
   lightTextDesc: false,
-  //topLine: "Insert your startup legacy text right here Paulo",
-  // headline: "We approach every challenge holistically, ",
-  //buttonLabel: "Get Started",
-  // description:
-  //  "We call this Alchemy, It has the power to build our clients' brands and transform their business.",
-  //
-  // imgStart: true,
-  // img: require("../../images/svg-2.svg"),
-  //alt: "Car",
+  topLine: "Empresa",
+  headline:
+    "A Nolan Engenharia & Inspeções é uma empresa especialista na norma NR13,",
+  buttonLabel: "Get Started",
+  description: `Com
+    foco na segurança de equipamentos como Caldeiras, Vasos de pressão, Tanques
+    metálicos e Tubulações como também aplicando treinamento para operadores de
+    Caldeiras e Vasos de pressão.`,
+
+  imgStart: true,
+  img: require("../../images/icon-nr13.png"),
+  alt: "Car",
   dark: false,
   primary: true,
   darkText: true,
@@ -45,7 +48,7 @@ export const homeObjThree = {
   description:
     "Nossa equipe esta preparada para atender a sua empresa de forma ágil, confiável e transparente.",
   buttonLabel: "Contato",
- // imgStart: true,
+  // imgStart: true,
   //img: require("../../images/svg-3.svg"),
   //alt: "Car",
   dark: false,

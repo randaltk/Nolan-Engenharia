@@ -78,15 +78,9 @@ function InfoSection({
             </Column1>
 
             <Column2>
-              <motion.div
-                initial={{ x: "100vw" }}
-                animate={{ x: 0 }}
-                transition={{ delay: 0.5 }}
-              >
-                <ImgWrap>
-                  <Img src={img} alt={alt} />
-                </ImgWrap>
-              </motion.div>
+              <ImgWrap>
+                <Img src={img} alt={alt} />
+              </ImgWrap>
             </Column2>
           </InfoRow>
           {menu}

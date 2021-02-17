@@ -1,0 +1,249 @@
+.scene {
+  width: 100%;
+  height: 340px;
+  border: 1px solid transparent;
+  margin: 40px 0;
+  perspective: 600px;
+  border-radius: 10px;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+  
+}
+
+.card.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.card__face {
+ 
+  width: 100%;
+  height: 100%;
+
+  color: white;
+  text-align: center;
+  line-height: 28px;
+  font-size: 50px;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+  border-radius: 10px;
+}
+
+.card__face--front {
+
+  background-image: url(../../images/a2e77789-7bb7-42f9-8a28-0486de37372e.jpg)
+}
+
+.card__face--back {
+
+  transform: rotateY(180deg);
+  text-align: center;
+}
+/*                                               2                                  */
+.scene-2 {
+  width: 100%;
+  height: 340px;
+  border: 1px solid transparent;
+  margin: 40px 0;
+  perspective: 600px;
+  border-radius: 10px;
+}
+
+.card-2 {
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+  
+}
+
+.card-2.is-flipped-2 {
+  transform: rotateY(180deg);
+}
+
+.card__face-2 {
+
+  width: 100%;
+  height: 100%;
+  line-height: 28px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+  border-radius: 10px;
+}
+
+.card__face--front-2 {
+  
+ 
+
+  background-image: url(../../images/11d90870-f25d-4ff9-8f57-aeda7d62d1ec.jpg)
+}
+
+
+
+.card__face--back-2 {
+  line-height: 35px;
+  text-align: center;
+  transform: rotateY(180deg);
+  
+  
+}
+
+/*                                                 3                                   */
+.scene-3 {
+  width: 100%;
+  height: 340px;
+  border: 1px solid transparent;
+  margin: 40px 0;
+  perspective: 600px;
+  border-radius: 10px;
+}
+
+.card-3 {
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+  
+}
+
+.card-3.is-flipped-3 {
+  transform: rotateY(180deg);
+}
+
+.card__face-3 {
+ 
+  width: 100%;
+  height: 100%;
+  
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+  border-radius: 10px;
+}
+
+.card__face--front-3 {
+
+  background-image: url(../../images/0d2ca6c4-eb3a-4f51-a051-0eeda7bcf9b3.jpg)
+}
+
+.card__face--back-3 {
+  line-height: 30px;
+  text-align: center;
+  transform: rotateY(180deg);
+}
+
+/*                                                 4                                   */
+.scene-4 {
+  width: 100%;
+  height: 340px;
+  border: 1px solid transparent;
+  margin: 40px 0;
+  perspective: 600px;
+  border-radius: 10px;
+}
+
+.card-4 {
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+  
+}
+
+.card-4.is-flipped-4{
+  transform: rotateY(180deg);
+}
+
+.card__face-4 {
+ 
+  width: 100%;
+  height: 100%;
+  
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+  border-radius: 10px;
+}
+
+.card__face--front-4 {
+
+  background-image: url(../../images/8fa35872-1cd6-4297-8c2d-65645415b1f6.jpg)
+}
+
+.card__face--back-4{
+  line-height: 30px;
+  text-align: center;
+  transform: rotateY(180deg);
+}
+
+
+/*                                                 5                                   */
+.scene-5 {
+  width: 100%;
+  height: 340px;
+  border: 1px solid transparent;
+  margin: 40px 0;
+  perspective: 600px;
+  border-radius: 10px;
+}
+
+.card-5 {
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+  
+}
+
+.card-5.is-flipped-5 {
+  transform: rotateY(180deg);
+}
+
+.card__face-5 {
+ 
+  width: 100%;
+  height: 100%;
+  
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+  border-radius: 10px;
+}
+
+.card__face--front-5 {
+
+  background-image: url(../../images/e48fc8f7-5dd9-43d9-aeef-ac76d67f97c4.jpg)
+}
+
+.card__face--back-5{
+  line-height: 30px;
+  text-align: center;
+  transform: rotateY(180deg);
+}
