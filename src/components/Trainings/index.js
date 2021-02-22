@@ -31,6 +31,14 @@ function Trainings() {
     card6.classList.toggle("is-flipped-6");
   };
 
+  const [hover7, setHover7] = useState(false);
+
+  const onHover7 = () => {
+    const card6 = document.querySelector(".card-7");
+
+    setHover7((prevHover7) => !prevHover7);
+    card6.classList.toggle("is-flipped-7");
+  };
   return (
     <ServicesContainer id="team">
       <ServicesWrapper
@@ -58,6 +66,33 @@ function Trainings() {
             ) : (
               <div class="card__face-6 card__face--front-6">
                 <ServicesH12>Operadores de caldeiras</ServicesH12>
+              </div>
+            )}
+          </div>
+        </div>
+
+        <div class="scene-7">
+          <div
+            class="card-7"
+            //onClick={(e) => handleCard(e)}
+            onMouseEnter={onHover7}
+            onMouseLeave={onHover7}
+          >
+            {hover7 ? (
+              <div class="card__face-7 card__face--back-7">
+                <ServicesH2>
+                  Esse tipo de treinamento para operadores de vasos de pressão
+                  são feitos de acordo com a norma NR13 anexo 1 do item B1.2,
+                  alínea “a” que diz: “possuir certificado de treinamento de
+                  segurança na operação de unidade de processo expedido por
+                  instituição competente para o treinamento e comprovação de
+                  pratica profissional supervisionada conforme item B1.6 deste
+                  anexo;”
+                </ServicesH2>
+              </div>
+            ) : (
+              <div class="card__face-7 card__face--front-7">
+                <ServicesH12>Operadores de vasos de pressão</ServicesH12>
               </div>
             )}
           </div>

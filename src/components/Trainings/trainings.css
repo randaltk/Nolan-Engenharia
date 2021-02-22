@@ -8,7 +8,7 @@
 }
 
 .card-6 {
-  width: 130%;
+  width: 100%;
   height: 130%;
   transition: transform 1s;
   transform-style: preserve-3d;
@@ -58,11 +58,12 @@
   margin: 40px 0;
   perspective: 600px;
   border-radius: 10px;
+  margin-left: 10em;
 }
 
 .card-7 {
   width: 100%;
-  height: 100%;
+  height: 130%;
   transition: transform 1s;
   transform-style: preserve-3d;
   cursor: pointer;
@@ -89,17 +90,16 @@
 }
 
 .card__face--front-7 {
-  
- 
 
-  background-image: url(../../images/11d90870-f25d-4ff9-8f57-aeda7d62d1ec.jpg)
+  background-image: url(../../images/8ca224e3dba831d1753d327f9a1adc27.jpg)
 }
 
 
 
-.card__face--back-7 {
+.card__face--back-7{
   line-height: 35px;
   text-align: center;
   transform: rotateY(180deg);
+
   
 }
