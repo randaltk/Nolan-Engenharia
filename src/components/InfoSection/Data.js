@@ -7,7 +7,6 @@ export const homeObjOne = {
   headline:
     "Conheça nosso treinamento que vai mudar o seu conceito de inspeção.",
   description: " Capacitação de operadores de caldeiras e vasos de pressão.",
-
   imgStart: false,
   img: require("../../images/be0ceb86-0697-402f-9942-8bd0c4113404.jpg"),
   alt: "Car",

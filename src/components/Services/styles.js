@@ -12,7 +12,7 @@ export const ServicesContainer = styled.div`
     height: 2200px;
   }
   @media screen and (max-width: 480px) {
-    height: 2200px;
+    height: 2800px;
   } ;
 `;
 

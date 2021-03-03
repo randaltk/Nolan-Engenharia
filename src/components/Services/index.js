@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Icon1 from "../../images/8fa35872-1cd6-4297-8c2d-65645415b1f6.jpg";
+//import Icon1 from "../../images/8fa35872-1cd6-4297-8c2d-65645415b1f6.jpg";
 //import Icon2 from "../../images/services-1.svg";
 //import Icon3 from "../../images/services-2.svg";
 //import Icon3 from "../../images/services-2.svg";
@@ -9,10 +9,10 @@ import {
   ServicesH12,
   ServicesH22,
   ServicesWrapper,
-  ServicesCard,
-  ServicesIcon,
+  //ServicesCard,
+  //ServicesIcon,
   ServicesH2,
-  ServicesP,
+  //ServicesP,
 } from "./styles";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -59,6 +59,13 @@ function Services() {
     const card5 = document.querySelector(".card-5");
     setHover5((prevHover5) => !prevHover5);
     card5.classList.toggle("is-flipped-5");
+  };
+
+  const [hover8, setHover8] = useState(false);
+  const onHover8 = () => {
+    const card8 = document.querySelector(".card-8");
+    setHover8((prevHover8) => !prevHover8);
+    card8.classList.toggle("is-flipped-8");
   };
   // const handleCard = () => {
   //   const card = document.querySelector(".card");
@@ -211,6 +218,28 @@ function Services() {
             ) : (
               <div class="card__face-5 card__face--front-5">
                 <ServicesH1>Soldas</ServicesH1>
+              </div>
+            )}
+          </div>
+        </div>
+
+        <div class="scene-8">
+          <div
+            class="card-8"
+            //onClick={(e) => handleCard(e)}
+            onMouseEnter={onHover8}
+            onMouseLeave={onHover8}
+          >
+            {hover8 ? (
+              <div class="card__face-8 card__face--back-8">
+                <ServicesH2>
+                  Executamos inspeções de solda como liquido penetrante,
+                  Ultrassom, partícula magnética e inspeção visual
+                </ServicesH2>
+              </div>
+            ) : (
+              <div class="card__face-8 card__face--front-8">
+                <ServicesH1>Alteração e reparo</ServicesH1>
               </div>
             )}
           </div>

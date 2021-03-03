@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
-import { Button } from "../ButtonComponent";
+import React, { useEffect } from "react";
 
+import ReactWhatsapp from "react-whatsapp";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import {
@@ -18,7 +18,7 @@ import {
   BtnWrap,
 } from "./styles";
 
-function InfoSection({
+function Contact({
   lightBg,
   id,
   imgStart,
@@ -37,8 +37,18 @@ function InfoSection({
   useEffect(() => {
     Aos.init({ duration: 1000 });
   }, []);
-  const [isOpen, setIsOpen] = useState(false);
 
+  const wppStyle = {
+    borderRadius: "50px",
+    background: "#01bf71",
+    whiteSpace: "nowrap",
+    padding: "14px 48px",
+    color: "#fff",
+    fontSize: "16px",
+    outline: "none",
+    cursor: "pointer",
+    border: "none",
+  };
   return (
     <>
       <InfoContainer lightBg={lightBg} id={id}>
@@ -51,9 +61,12 @@ function InfoSection({
                 <Subtitle darkText={darkText}>{description}</Subtitle>
 
                 <BtnWrap>
-                  <Button
+                  <ReactWhatsapp
+                    style={wppStyle}
+                    number="55-11-95166-1499"
+                    message="Olá! Gostaria de obter mais informações"
                     to=""
-                    onClick={() => setIsOpen(!isOpen)}
+                    //onClick={() => setIsOpen(!isOpen)}
                     smooth={true}
                     duration={500}
                     spy={true}
@@ -64,8 +77,8 @@ function InfoSection({
                     dark2={dark2 ? 1 : 0}
                     disp={primary ? 1 : 0}
                   >
-                    {buttonLabel}
-                  </Button>
+                    Iniciar Conversa
+                  </ReactWhatsapp>
                 </BtnWrap>
               </TextWrapper>
             </Column1>
@@ -82,4 +95,4 @@ function InfoSection({
   );
 }
 
-export default InfoSection;
+export default Contact;
