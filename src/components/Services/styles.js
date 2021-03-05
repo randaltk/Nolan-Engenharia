@@ -9,7 +9,7 @@ export const ServicesContainer = styled.div`
   background: #2f6ca3;
 
   @media screen and (max-width: 768px) {
-    height: 2200px;
+    height: 2800px;
   }
   @media screen and (max-width: 480px) {
     height: 2800px;
@@ -100,7 +100,8 @@ export const ServicesH22 = styled.h2`
 `;
 
 export const ServicesP = styled.p`
-  font-size: 0.5rem;
+  font-size: 1rem;
+
   text-align: center;
 `;
 

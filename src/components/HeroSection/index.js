@@ -16,7 +16,7 @@ import {
   ArrowForward,
   ArrowRight,
 } from "./styles";
-import Video from "../../images/pexels-anamul-rezwan-1216589.jpg";
+import Video from "../../images/hero-img.jpg";
 import { Button } from "../ButtonComponent";
 
 function HeroSection() {

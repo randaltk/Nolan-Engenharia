@@ -1,18 +1,10 @@
 import React, { useState, useEffect } from "react";
-import Icon1 from "../../images/factory_training.png";
-//import Icon2 from "../../images/services-1.svg";
-//import Icon3 from "../../images/services-2.svg";
-//import Icon3 from "../../images/services-2.svg";
+
 import {
   ServicesContainer,
-  ServicesH1,
   ServicesH12,
-  ServicesH22,
   ServicesWrapper,
-  ServicesCard,
-  ServicesIcon,
   ServicesH2,
-  ServicesP,
 } from "./styles";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -46,15 +38,10 @@ function Trainings() {
         data-aos-offset="200"
         data-aos-delay="10"
       >
-        <div class="scene-6">
-          <div
-            class="card-6"
-            //onClick={(e) => handleCard(e)}
-            onMouseEnter={onHover6}
-            onMouseLeave={onHover6}
-          >
+        <div className="scene-6">
+          <div className="card-6" onClick={onHover6}>
             {hover6 ? (
-              <div class="card__face-6 card__face--back-6">
+              <div className="card__face-6 card__face--back-6">
                 <ServicesH2>
                   Fazemos treinamento para operadores de Caldeiras conforme NR13
                   anexo 1 item A1.1, alínea “a” que diz: “possuir certificado de
@@ -64,22 +51,17 @@ function Trainings() {
                 </ServicesH2>
               </div>
             ) : (
-              <div class="card__face-6 card__face--front-6">
+              <div className="card__face-6 card__face--front-6">
                 <ServicesH12>Operadores de caldeiras</ServicesH12>
               </div>
             )}
           </div>
         </div>
 
-        <div class="scene-7">
-          <div
-            class="card-7"
-            //onClick={(e) => handleCard(e)}
-            onMouseEnter={onHover7}
-            onMouseLeave={onHover7}
-          >
+        <div className="scene-7">
+          <div className="card-7" onClick={onHover7}>
             {hover7 ? (
-              <div class="card__face-7 card__face--back-7">
+              <div className="card__face-7 card__face--back-7">
                 <ServicesH2>
                   Esse tipo de treinamento para operadores de vasos de pressão
                   são feitos de acordo com a norma NR13 anexo 1 do item B1.2,
@@ -91,7 +73,7 @@ function Trainings() {
                 </ServicesH2>
               </div>
             ) : (
-              <div class="card__face-7 card__face--front-7">
+              <div className="card__face-7 card__face--front-7">
                 <ServicesH12>Operadores de vasos de pressão</ServicesH12>
               </div>
             )}

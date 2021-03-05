@@ -65,17 +65,6 @@ function Contact({
                     style={wppStyle}
                     number="55-11-95166-1499"
                     message="Olá! Gostaria de obter mais informações"
-                    to=""
-                    //onClick={() => setIsOpen(!isOpen)}
-                    smooth={true}
-                    duration={500}
-                    spy={true}
-                    exact="true"
-                    offset={-80}
-                    primary={primary ? 1 : 0}
-                    dark={dark ? 1 : 0}
-                    dark2={dark2 ? 1 : 0}
-                    disp={primary ? 1 : 0}
                   >
                     Iniciar Conversa
                   </ReactWhatsapp>

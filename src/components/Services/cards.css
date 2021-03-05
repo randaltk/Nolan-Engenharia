@@ -14,8 +14,9 @@
   transform-style: preserve-3d;
   cursor: pointer;
   position: relative;
-  
+
 }
+
 
 .card.is-flipped {
   transform: rotateY(180deg);
@@ -37,14 +38,19 @@
 
 .card__face--front {
 
-  background-image: url(../../images/a2e77789-7bb7-42f9-8a28-0486de37372e.jpg)
+  background-image: url(../../images/caldeiras-services.jpg)
 }
 
 .card__face--back {
 
   transform: rotateY(180deg);
   text-align: center;
+ 
+
 }
+
+
+
 /*                                               2                                  */
 .scene-2 {
   width: 100%;
@@ -87,7 +93,7 @@
   
  
 
-  background-image: url(../../images/11d90870-f25d-4ff9-8f57-aeda7d62d1ec.jpg)
+  background-image: url(../../images/vasos-services.jpg)
 }
 
 
@@ -140,13 +146,14 @@
 
 .card__face--front-3 {
 
-  background-image: url(../../images/0d2ca6c4-eb3a-4f51-a051-0eeda7bcf9b3.jpg)
+  background-image: url(../../images/tubulaçoes-services.jpg)
 }
 
 .card__face--back-3 {
   line-height: 30px;
   text-align: center;
   transform: rotateY(180deg);
+  overflow-y: scroll;
 }
 
 /*                                                 4                                   */
@@ -189,13 +196,14 @@
 
 .card__face--front-4 {
 
-  background-image: url(../../images/8fa35872-1cd6-4297-8c2d-65645415b1f6.jpg)
+  background-image: url(../../images/tanques-services.jpg)
 }
 
 .card__face--back-4{
   line-height: 30px;
   text-align: center;
   transform: rotateY(180deg);
+  overflow-y: scroll;
 }
 
 
@@ -239,7 +247,7 @@
 
 .card__face--front-5 {
 
-  background-image: url(../../images/solda.jpg);
+  background-image: url(../../images/solda-services.jpg);
   background-size:cover;
 }
 
@@ -290,7 +298,7 @@
 
 .card__face--front-8 {
 
-  background-image: url(../../images/lalalala.png);
+  background-image: url(../../images/alteraçao-services.png);
   background-size:cover;
 }
 
@@ -298,4 +306,39 @@
   line-height: 30px;
   text-align: center;
   transform: rotateY(180deg);
+}
+
+
+
+
+
+
+
+
+/*                                                 ScrollBar                                  */
+
+
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.card__face--back-3::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.card__face--back-3 {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.card__face--back-4::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.card__face--back-4 {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }

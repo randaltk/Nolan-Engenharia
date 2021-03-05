@@ -8,7 +8,7 @@ export const homeObjOne = {
     "Conheça nosso treinamento que vai mudar o seu conceito de inspeção.",
   description: " Capacitação de operadores de caldeiras e vasos de pressão.",
   imgStart: false,
-  img: require("../../images/be0ceb86-0697-402f-9942-8bd0c4113404.jpg"),
+  img: require("../../images/nolan-section.jpg"),
   alt: "Car",
   dark: true,
   primary: true,
@@ -47,9 +47,7 @@ export const homeObjThree = {
   description:
     "Nossa equipe esta preparada para atender a sua empresa de forma ágil, confiável e transparente.",
   buttonLabel: "Contato",
-  // imgStart: true,
-  //img: require("../../images/svg-3.svg"),
-  //alt: "Car",
+
   dark: false,
   primary: false,
   darkText: true,

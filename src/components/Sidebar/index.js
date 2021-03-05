@@ -41,15 +41,6 @@ function Sidebar({ isOpen, toggle }) {
           </SidebarLink>
         </SidebarMenu>
       </SidebarWrapper>
-      <select value={language} onChange={handleSelectChange}>
-        <option id="BRA" value="pt-BR">
-          PT
-        </option>
-
-        <option id="EN" value="en-US">
-          EN
-        </option>
-      </select>
     </SidebarContainer>
   );
 }

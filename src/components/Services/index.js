@@ -12,7 +12,7 @@ import {
   //ServicesCard,
   //ServicesIcon,
   ServicesH2,
-  //ServicesP,
+  ServicesP,
 } from "./styles";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -67,13 +67,6 @@ function Services() {
     setHover8((prevHover8) => !prevHover8);
     card8.classList.toggle("is-flipped-8");
   };
-  // const handleCard = () => {
-  //   const card = document.querySelector(".card");
-  //   console.log("foi0");
-  //   card.addEventListener("click", function () {
-  //     card.classList.toggle("is-flipped");
-  //   });
-  // };
 
   return (
     <ServicesContainer id="services">
@@ -82,15 +75,10 @@ function Services() {
         data-aos-offset="200"
         data-aos-delay="10"
       >
-        <div class="scene">
-          <div
-            class="card"
-            //onClick={(e) => handleCard(e)}
-            onMouseEnter={onHover}
-            onMouseLeave={onHover}
-          >
+        <div className="scene">
+          <div className="card" onClick={onHover}>
             {hover ? (
-              <div class="card__face card__face--back">
+              <div className="card__face card__face--back">
                 <ServicesH2>
                   A inspeção em Caldeiras é feita com base na norma NR13 de
                   acordo com o item 13.4.1.1: “Caldeiras a vapor são
@@ -101,22 +89,17 @@ function Services() {
                 </ServicesH2>
               </div>
             ) : (
-              <div class="card__face card__face--front">
+              <div className="card__face card__face--front">
                 <ServicesH1>Caldeiras</ServicesH1>
               </div>
             )}
           </div>
         </div>
 
-        <div class="scene-2">
-          <div
-            class="card-2"
-            //onClick={(e) => handleCard(e)}
-            onMouseEnter={onHover2}
-            onMouseLeave={onHover2}
-          >
+        <div className="scene-2">
+          <div className="card-2" onClick={onHover2}>
             {hover2 ? (
-              <div class="card__face-2 card__face--back-2">
+              <div className="card__face-2 card__face--back-2">
                 <ServicesH2>
                   Os Vasos de pressão são inspecionados conforme a NR13 item
                   13.5, de acordo com item 13.5.12 “Para efeito desta NR os
@@ -125,22 +108,17 @@ function Services() {
                 </ServicesH2>
               </div>
             ) : (
-              <div class="card__face-2 card__face--front-2">
+              <div className="card__face-2 card__face--front-2">
                 <ServicesH12>Vasos de pressão</ServicesH12>
               </div>
             )}
           </div>
         </div>
 
-        <div class="scene-3">
-          <div
-            class="card-3"
-            //onClick={(e) => handleCard(e)}
-            onMouseEnter={onHover3}
-            onMouseLeave={onHover3}
-          >
+        <div className="scene-3">
+          <div className="card-3" onClick={onHover3}>
             {hover3 ? (
-              <div class="card__face-3 card__face--back-3">
+              <div className="card__face-3 card__face--back-3">
                 <ServicesH2>
                   Esse tipo de inspeção também é feito com base na NR13 no item
                   13.6 da norma, de acordo com o item 13.6.1.1 “As empresas que
@@ -148,33 +126,28 @@ function Services() {
                   NR devem possuir um programa e um plano de inspeção que
                   considere, no mínimo, as variáveis, condições e premissas
                   descritas abaixo:”{" "}
-                  {/*  <ServicesP>a) Os fluidos transportados;</ServicesP>
+                  <ServicesP>a) Os fluidos transportados;</ServicesP>
                   <ServicesP> b) A pressão de trabalho;</ServicesP>
                   <ServicesP> c) A temperatura de trabalho;</ServicesP>
-                  <ServicesP>d) Os mecanismos de danos previsíveis</ServicesP>
+                  <ServicesP>d) Os mecanismos de danos previsíveis;</ServicesP>
                   <ServicesP>
                     e) As consequências para os trabalhadores, instalações e
                     meio ambiente trazidas por possíveis falhas das tubulações.
-                  </ServicesP>  */}
+                  </ServicesP>
                 </ServicesH2>
               </div>
             ) : (
-              <div class="card__face-3 card__face--front-3">
+              <div className="card__face-3 card__face--front-3">
                 <ServicesH1>Tubulações</ServicesH1>
               </div>
             )}
           </div>
         </div>
 
-        <div class="scene-4">
-          <div
-            class="card-4"
-            //onClick={(e) => handleCard(e)}
-            onMouseEnter={onHover4}
-            onMouseLeave={onHover4}
-          >
+        <div className="scene-4">
+          <div className="card-4" onClick={onHover4}>
             {hover4 ? (
-              <div class="card__face-4 card__face--back-4">
+              <div className="card__face-4 card__face--back-4">
                 <ServicesH22>
                   A inspeção de Tanques metálicos também é feita conforme NR13
                   item 13.7, de acordo item 13.7.1.1 “As empresas que possuem
@@ -183,62 +156,52 @@ function Services() {
                   considere, no mínimo, as variáveis, condições e premissas
                   descritas abaixo: (vide prazo vigência no art. 7° da portaria
                   MTE n° 1.082, de 18 de dezembro de 2018){" "}
-                  {/*  <ServicesP>a) Os fluidos transportados;</ServicesP>
+                  <ServicesP>a) Os fluidos transportados;</ServicesP>
                   <ServicesP> b) A pressão de trabalho;</ServicesP>
                   <ServicesP> c) A temperatura de trabalho;</ServicesP>
-                  <ServicesP>d) Os mecanismos de danos previsíveis</ServicesP>
+                  <ServicesP>d) Os mecanismos de danos previsíveis;</ServicesP>
                   <ServicesP>
                     e) As consequências para os trabalhadores, instalações e
                     meio ambiente trazidas por possíveis falhas das tubulações.
-                  </ServicesP>  */}
+                  </ServicesP>
                 </ServicesH22>
               </div>
             ) : (
-              <div class="card__face-4 card__face--front-4">
+              <div className="card__face-4 card__face--front-4">
                 <ServicesH1>Tanques Metálicos</ServicesH1>
               </div>
             )}
           </div>
         </div>
 
-        <div class="scene-5">
-          <div
-            class="card-5"
-            //onClick={(e) => handleCard(e)}
-            onMouseEnter={onHover5}
-            onMouseLeave={onHover5}
-          >
+        <div className="scene-5">
+          <div className="card-5" onClick={onHover5}>
             {hover5 ? (
-              <div class="card__face-5 card__face--back-5">
+              <div className="card__face-5 card__face--back-5">
                 <ServicesH2>
                   Executamos inspeções de solda como liquido penetrante,
                   Ultrassom, partícula magnética e inspeção visual
                 </ServicesH2>
               </div>
             ) : (
-              <div class="card__face-5 card__face--front-5">
+              <div className="card__face-5 card__face--front-5">
                 <ServicesH1>Soldas</ServicesH1>
               </div>
             )}
           </div>
         </div>
 
-        <div class="scene-8">
-          <div
-            class="card-8"
-            //onClick={(e) => handleCard(e)}
-            onMouseEnter={onHover8}
-            onMouseLeave={onHover8}
-          >
+        <div className="scene-8">
+          <div className="card-8" onClick={onHover8}>
             {hover8 ? (
-              <div class="card__face-8 card__face--back-8">
+              <div className="card__face-8 card__face--back-8">
                 <ServicesH2>
                   Executamos inspeções de solda como liquido penetrante,
                   Ultrassom, partícula magnética e inspeção visual
                 </ServicesH2>
               </div>
             ) : (
-              <div class="card__face-8 card__face--front-8">
+              <div className="card__face-8 card__face--front-8">
                 <ServicesH1>Alteração e reparo</ServicesH1>
               </div>
             )}

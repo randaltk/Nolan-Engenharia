@@ -1,12 +1,6 @@
 import React from "react";
 import { animateScroll as scroll } from "react-scroll";
-import {
-  FaFacebook,
-  FaInstagram,
-  FaYoutube,
-  FaTwitter,
-  FaLinkedin,
-} from "react-icons/fa";
+import { FaFacebook, FaInstagram } from "react-icons/fa";
 import {
   FooterContainer,
   FooterWrap,
@@ -33,34 +27,10 @@ function Footer() {
         <FooterLinksContainer>
           <FooterLinksWrapper>
             <FooterLinkItems>
-              <FooterLinkTitle> Sobre nós </FooterLinkTitle>
-              <FooterLink to="/">How it works</FooterLink>
-              <FooterLink to="/">Testimonials</FooterLink>
-              <FooterLink to="/">Partners</FooterLink>
-              <FooterLink to="/">Terms Of service</FooterLink>
-            </FooterLinkItems>
-            <FooterLinkItems>
-              <FooterLinkTitle> Contato </FooterLinkTitle>
-              <FooterLink to="/">Contato</FooterLink>
-              <FooterLink to="/">Support</FooterLink>
-              <FooterLink to="/">Destinations</FooterLink>
-              <FooterLink to="/">Sponsorships</FooterLink>
-            </FooterLinkItems>
-          </FooterLinksWrapper>
-          <FooterLinksWrapper>
-            <FooterLinkItems>
               <FooterLinkTitle>Endereço </FooterLinkTitle>
-              <FooterLink to="/">Submit Question</FooterLink>
-              <FooterLink to="/">Ambassadors</FooterLink>
-              <FooterLink to="/">Agency</FooterLink>
-              <FooterLink to="/">Influencer</FooterLink>
-            </FooterLinkItems>
-            <FooterLinkItems>
-              <FooterLinkTitle> Midias Sociais </FooterLinkTitle>
-              <FooterLink to="/">Instagram</FooterLink>
-              <FooterLink to="/">Facebook</FooterLink>
-              <FooterLink to="/">Youtube</FooterLink>
-              <FooterLink to="/">Twitter</FooterLink>
+              <FooterLink to="/">
+                R. André de Leão, 138 - Vila Socorro São Paulo - SP 04762-030
+              </FooterLink>
             </FooterLinkItems>
           </FooterLinksWrapper>
         </FooterLinksContainer>
@@ -80,15 +50,22 @@ function Footer() {
               <SocialIconLink href="/" target="_blank" aria-label="Instagram">
                 <FaInstagram />
               </SocialIconLink>
-              <SocialIconLink href="/" target="_blank" aria-label="Youtube">
-                <FaYoutube />
-              </SocialIconLink>
-              <SocialIconLink href="/" target="_blank" aria-label="Twitter">
-                <FaTwitter />
-              </SocialIconLink>
-              <SocialIconLink href="/" target="_blank" aria-label="Linkedin">
-                <FaLinkedin />
-              </SocialIconLink>
+              {/*  */}{" "}
+              <SocialIconLink
+                href="/"
+                target="_blank"
+                aria-label="Youtube"
+              ></SocialIconLink>
+              <SocialIconLink
+                href="/"
+                target="_blank"
+                aria-label="Twitter"
+              ></SocialIconLink>
+              <SocialIconLink
+                href="/"
+                target="_blank"
+                aria-label="Linkedin"
+              ></SocialIconLink>
             </SocialIcons>
           </SocialMediaWrap>
         </SocialMedia>
