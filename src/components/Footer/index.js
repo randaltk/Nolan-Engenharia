@@ -1,6 +1,6 @@
 import React from "react";
 import { animateScroll as scroll } from "react-scroll";
-import { FaFacebook, FaInstagram } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import {
   FooterContainer,
   FooterWrap,
@@ -44,28 +44,28 @@ function Footer() {
               Nolan © {new Date().getFullYear()} - Todos os Direitos Reservados
             </WebsiteRights>
             <SocialIcons>
-              <SocialIconLink href="/" target="_blank" aria-label="Facebook">
+              <SocialIconLink
+                href="https://www.facebook.com/Nolan-Engenharia-Inspe%C3%A7%C3%B5es-101094468655978/"
+                target="_blank"
+                aria-label="Facebook"
+              >
                 <FaFacebook />
               </SocialIconLink>
-              <SocialIconLink href="/" target="_blank" aria-label="Instagram">
+              <SocialIconLink
+                href="https://www.instagram.com/geovanecarvalho94/"
+                target="_blank"
+                aria-label="Instagram"
+              >
                 <FaInstagram />
               </SocialIconLink>
               {/*  */}{" "}
               <SocialIconLink
-                href="/"
-                target="_blank"
-                aria-label="Youtube"
-              ></SocialIconLink>
-              <SocialIconLink
-                href="/"
-                target="_blank"
-                aria-label="Twitter"
-              ></SocialIconLink>
-              <SocialIconLink
-                href="/"
+                href="https://www.linkedin.com/company/nolanengenharia/"
                 target="_blank"
                 aria-label="Linkedin"
-              ></SocialIconLink>
+              >
+                <FaLinkedin />
+              </SocialIconLink>
             </SocialIcons>
           </SocialMediaWrap>
         </SocialMedia>

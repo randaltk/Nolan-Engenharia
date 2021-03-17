@@ -95,3 +95,8 @@ export const Img = styled.img`
   margin: 0 0 10px 0;
   padding-right: 0;
 `;
+export const SocialIconLink = styled.a`
+  color: #fff;
+  font-size: 18px;
+  margin-left: 10px;
+`;

@@ -22,7 +22,7 @@
 }
 
 .card__face-6 {
-
+ 
   width: 100%;
   height: 100%;
   line-height: 28px;
@@ -37,7 +37,9 @@
 
 .card__face--front-6 {
 
-  background-image: url(../../images/caldeiras-trainings.jpg)
+  
+  background-image: url(../../images/caldeiras-trainings.webp);
+
 }
 
 
@@ -90,8 +92,8 @@
 }
 
 .card__face--front-7 {
-
-  background-image: url(../../images/operators-trainings.jpg);
+ 
+ background-image: url(../../images/operators-trainings.webp);
 
 }
 

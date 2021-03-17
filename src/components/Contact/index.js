@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-
+import { FaWhatsapp } from "react-icons/fa";
 import ReactWhatsapp from "react-whatsapp";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -16,6 +16,7 @@ import {
   Heading,
   Subtitle,
   BtnWrap,
+  SocialIconLink,
 } from "./styles";
 
 function Contact({
@@ -48,6 +49,7 @@ function Contact({
     outline: "none",
     cursor: "pointer",
     border: "none",
+    lineHeight: "22px",
   };
   return (
     <>
@@ -67,6 +69,9 @@ function Contact({
                     message="Olá! Gostaria de obter mais informações"
                   >
                     Iniciar Conversa
+                    <SocialIconLink>
+                      <FaWhatsapp />
+                    </SocialIconLink>
                   </ReactWhatsapp>
                 </BtnWrap>
               </TextWrapper>

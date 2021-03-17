@@ -30,6 +30,7 @@ export const ServicesH1 = styled.h1`
 export const ServicesH12 = styled.h1`
   font-size: 2.5rem;
   color: #fff;
+
   margin-bottom: 64px;
   line-height: 50px;
 
