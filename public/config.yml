@@ -1,44 +1,66 @@
-# /admin/config.yml
-publish_mode: editorial_workflow
-# /admin/config.yml
-publish_mode: editorial_workflow
-public_folder: "/images/uploads"
+backend:
+  name: git-gateway
+  branch: master
 
+media_folder: static/img
+public_folder: /img
+
+site_url: https://nolan-engenharia-e-inspecoes.netlify.app
 i18n:
   structure: multiple_folders
-  locales: [en, de, fr]
+  locales: [pt,en]
+  default_locale: pt
+
 
 collections:
-  - name: posts
-    label: Posts
-    folder: content/posts
+  - name: 'show'
+    label: 'Show'
+    folder: 'assets/content/show'
     create: true
+    format: 'json'
+    slug: '{{slug}}'
+    editor:
+      preview: true
     i18n: true
     fields:
-      - label: Title
-        name: title
-        widget: string
+      - { label: 'Title', name: 'title', widget: 'string', i18n: true }
+      - {
+          label: 'Featured Image',
+          name: 'thumbnail',
+          widget: 'image',
+          allow_multiple: false,
+          required: false,
+          i18n: duplicate,
+        }
+      - label: 'Gallery'
+        name: 'galleryImages'
+        widget: 'list'
+        summary: '{{fields.image}} - {{fields.alt}}'
         i18n: true
-      - label: Date
-        name: date
-        widget: datetime
-        i18n: duplicate
-      - label: Body
-        name: body
-        widget: markdown
+        fields:
+          - { label: 'Image', name: 'image', widget: 'image' }
+          - { label: 'Alt text', name: 'alt', widget: 'string' }
+      - {
+          label: 'Publish Date',
+          name: 'date',
+          widget: 'datetime',
+          i18n: duplicate,
+        }
+      - {
+          label: 'Description',
+          name: 'description',
+          widget: 'string',
+          i18n: true,
+        }
+      - { label: 'Body', name: 'body', widget: 'markdown', i18n: true }
 
-        - label: 'Object'
-  name: 'object'
-  widget: 'object'
-  i18n: true
-  fields:
-    - { label: 'String', name: 'string', widget: 'string', i18n: true }
-    - { label: 'Date', name: 'date', widget: 'datetime', i18n: duplicate }
-    - { label: 'Boolean', name: 'boolean', widget: 'boolean', i18n: duplicate }
-    - {
-        label: 'Object',
-        name: 'object',
-        widget: 'object',
-        i18n: true,
-        field: { label: 'String', name: 'string', widget: 'string', i18n: duplicate },
-      }
+  - label: 'Setup'
+    name: 'setup'
+    files:
+      - label: 'Site Info'
+        name: 'info'
+        format: 'json'
+        file: 'content/setup/info.json'
+        fields:
+          - { label: Site Name, name: sitename, widget: string }
+          - { label: Site Description, name: sitedescription, widget: string }
