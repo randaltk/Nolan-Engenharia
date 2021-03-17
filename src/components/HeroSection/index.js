@@ -19,6 +19,8 @@ import {
 import Video from "../../images/hero-img.jpg";
 import { Button } from "../ButtonComponent";
 
+import { i18n } from "../../translate/i18n";
+
 function HeroSection() {
   useEffect(() => {
     Aos.init({ duration: 2000 });
@@ -28,13 +30,6 @@ function HeroSection() {
   const onHover = () => {
     setHover(!hover);
   };
-  //function toggleMute() {
-  //var video = document.getElementById("myVideo");
-  //if (video.muted) {
-  // video.muted = false;
-  // } else {
-  //video.muted = true;
-  // }
 
   return (
     <HeroContainer id="home" data-aos="zoom-out-down ease-in-out-sine">
@@ -43,9 +38,9 @@ function HeroSection() {
       </HeroBg>
 
       <HeroContent>
-        <HeroH1>Evite Multas</HeroH1>
+        <HeroH1>{i18n.t("hero.fines")}</HeroH1>
 
-        <HeroP>Mantenha vidas seguras</HeroP>
+        <HeroP>{i18n.t("hero.lifes")}</HeroP>
 
         <motion.div
           whileHover={{
@@ -64,7 +59,8 @@ function HeroSection() {
               onMouseEnter={onHover}
               onMouseLeave={onHover}
             >
-              Faça sua inspeção {hover ? <ArrowForward /> : <ArrowRight />}
+              {i18n.t("hero.inspection")}
+              {hover ? <ArrowForward /> : <ArrowRight />}
             </Button>
           </HeroBtnWrapper>
         </motion.div>

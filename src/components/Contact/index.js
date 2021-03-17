@@ -3,6 +3,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import ReactWhatsapp from "react-whatsapp";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { i18n } from "../../translate/i18n";
 import {
   InfoContainer,
   InfoWrapper,
@@ -68,7 +69,7 @@ function Contact({
                     number="55-11-95166-1499"
                     message="Olá! Gostaria de obter mais informações"
                   >
-                    Iniciar Conversa
+                    {i18n.t("contact.contactbtn")}
                     <SocialIconLink>
                       <FaWhatsapp />
                     </SocialIconLink>

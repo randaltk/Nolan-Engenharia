@@ -1,16 +1,11 @@
 import React, { useState, useEffect } from "react";
-//import Icon1 from "../../images/8fa35872-1cd6-4297-8c2d-65645415b1f6.jpg";
-//import Icon2 from "../../images/services-1.svg";
-//import Icon3 from "../../images/services-2.svg";
-//import Icon3 from "../../images/services-2.svg";
+import { i18n } from "../../translate/i18n";
 import {
   ServicesContainer,
   ServicesH1,
   ServicesH12,
   ServicesH22,
   ServicesWrapper,
-  //ServicesCard,
-  //ServicesIcon,
   ServicesH2,
   ServicesP,
 } from "./styles";
@@ -79,18 +74,11 @@ function Services() {
           <div className="card" onClick={onHover}>
             {hover ? (
               <div className="card__face card__face--back">
-                <ServicesH2>
-                  A inspeção em Caldeiras é feita com base na norma NR13 de
-                  acordo com o item 13.4.1.1: “Caldeiras a vapor são
-                  equipamentos destinados a produzir e acumular vapor sob
-                  pressão superior à atmosférica utilizando qualquer fonte de
-                  energia, projetados conforme códigos pertinentes executando-se
-                  refervedores e similares.”
-                </ServicesH2>
+                <ServicesH2>{i18n.t("services.boilersDesc")}</ServicesH2>
               </div>
             ) : (
               <div className="card__face card__face--front">
-                <ServicesH1>Caldeiras</ServicesH1>
+                <ServicesH1> {i18n.t("services.boilers")}</ServicesH1>
               </div>
             )}
           </div>
@@ -100,16 +88,11 @@ function Services() {
           <div className="card-2" onClick={onHover2}>
             {hover2 ? (
               <div className="card__face-2 card__face--back-2">
-                <ServicesH2>
-                  Os Vasos de pressão são inspecionados conforme a NR13 item
-                  13.5, de acordo com item 13.5.12 “Para efeito desta NR os
-                  vasos de pressão são classificados em categorias segundo a
-                  classe de fluido e o potencial de risco.”
-                </ServicesH2>
+                <ServicesH2>{i18n.t("services.pressurevesselDesc")}</ServicesH2>
               </div>
             ) : (
               <div className="card__face-2 card__face--front-2">
-                <ServicesH12>Vasos de pressão</ServicesH12>
+                <ServicesH12>{i18n.t("services.pressureVessel")}</ServicesH12>
               </div>
             )}
           </div>
@@ -120,25 +103,17 @@ function Services() {
             {hover3 ? (
               <div className="card__face-3 card__face--back-3">
                 <ServicesH2>
-                  Esse tipo de inspeção também é feito com base na NR13 no item
-                  13.6 da norma, de acordo com o item 13.6.1.1 “As empresas que
-                  possuem tubulações e sistemas de tubulação enquadrados nesta
-                  NR devem possuir um programa e um plano de inspeção que
-                  considere, no mínimo, as variáveis, condições e premissas
-                  descritas abaixo:”{" "}
-                  <ServicesP>a) Os fluidos transportados;</ServicesP>
-                  <ServicesP> b) A pressão de trabalho;</ServicesP>
-                  <ServicesP> c) A temperatura de trabalho;</ServicesP>
-                  <ServicesP>d) Os mecanismos de danos previsíveis;</ServicesP>
-                  <ServicesP>
-                    e) As consequências para os trabalhadores, instalações e
-                    meio ambiente trazidas por possíveis falhas das tubulações.
-                  </ServicesP>
+                  {i18n.t("services.pipesDesc")}
+                  <ServicesP>a) {i18n.t("services.pipesA")}</ServicesP>
+                  <ServicesP> b) {i18n.t("services.pipesB")}</ServicesP>
+                  <ServicesP> c){i18n.t("services.pipesC")}</ServicesP>
+                  <ServicesP>d){i18n.t("services.pipesD")}</ServicesP>
+                  <ServicesP>e) {i18n.t("services.pipesE")}</ServicesP>
                 </ServicesH2>
               </div>
             ) : (
               <div className="card__face-3 card__face--front-3">
-                <ServicesH1>Tubulações</ServicesH1>
+                <ServicesH1>{i18n.t("services.pipes")}</ServicesH1>
               </div>
             )}
           </div>
@@ -149,26 +124,16 @@ function Services() {
             {hover4 ? (
               <div className="card__face-4 card__face--back-4">
                 <ServicesH22>
-                  A inspeção de Tanques metálicos também é feita conforme NR13
-                  item 13.7, de acordo item 13.7.1.1 “As empresas que possuem
-                  tanques metálicos de armazenamento e estocagem enquadrados
-                  nesta NR devem possuir um programa e um plano de inspeção que
-                  considere, no mínimo, as variáveis, condições e premissas
-                  descritas abaixo: (vide prazo vigência no art. 7° da portaria
-                  MTE n° 1.082, de 18 de dezembro de 2018){" "}
-                  <ServicesP>a) Os fluidos transportados;</ServicesP>
-                  <ServicesP> b) A pressão de trabalho;</ServicesP>
-                  <ServicesP> c) A temperatura de trabalho;</ServicesP>
-                  <ServicesP>d) Os mecanismos de danos previsíveis;</ServicesP>
-                  <ServicesP>
-                    e) As consequências para os trabalhadores, instalações e
-                    meio ambiente trazidas por possíveis falhas das tubulações.
-                  </ServicesP>
+                  {i18n.t("services.metallictanksDesc")}
+                  <ServicesP>a) {i18n.t("services.tanksA")}</ServicesP>
+                  <ServicesP> b) {i18n.t("services.tanksB")}</ServicesP>
+                  <ServicesP> c) {i18n.t("services.tanksC")}</ServicesP>
+                  <ServicesP>d) {i18n.t("services.tanksD")}</ServicesP>
                 </ServicesH22>
               </div>
             ) : (
               <div className="card__face-4 card__face--front-4">
-                <ServicesH1>Tanques Metálicos</ServicesH1>
+                <ServicesH1>{i18n.t("services.metallicTanks")}</ServicesH1>
               </div>
             )}
           </div>
@@ -178,14 +143,11 @@ function Services() {
           <div className="card-5" onClick={onHover5}>
             {hover5 ? (
               <div className="card__face-5 card__face--back-5">
-                <ServicesH2>
-                  Executamos inspeções de solda como liquido penetrante,
-                  Ultrassom, partícula magnética e inspeção visual
-                </ServicesH2>
+                <ServicesH2>{i18n.t("services.weldsDesc")}</ServicesH2>
               </div>
             ) : (
               <div className="card__face-5 card__face--front-5">
-                <ServicesH1>Soldas</ServicesH1>
+                <ServicesH1>{i18n.t("services.welds")}</ServicesH1>
               </div>
             )}
           </div>
@@ -196,13 +158,12 @@ function Services() {
             {hover8 ? (
               <div className="card__face-8 card__face--back-8">
                 <ServicesH2>
-                  Executamos inspeções de solda como liquido penetrante,
-                  Ultrassom, partícula magnética e inspeção visual
+                  {i18n.t("services.alterationrepairDesc")}
                 </ServicesH2>
               </div>
             ) : (
               <div className="card__face-8 card__face--front-8">
-                <ServicesH1>Alteração e reparo</ServicesH1>
+                <ServicesH1>{i18n.t("services.alterationRepair")}</ServicesH1>
               </div>
             )}
           </div>
