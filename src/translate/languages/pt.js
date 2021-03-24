@@ -90,12 +90,35 @@ const messages = {
         `,
       },
 
+      trainings: {
+        trainingsTitle1: "Operadores de caldeiras",
+        trainingsDesc1: `Fazemos treinamento para operadores de Caldeiras conforme NR13
+        anexo 1 item A1.1, alínea “a” que diz: “possuir certificado de
+        treinamento de segurança na operação de caldeiras expedido por
+        instituição competente e comprovação de prática profissional
+        supervisionada conforme item A1.5 deste anexo;”`,
+
+        trainingsTitle2: "Operadores de vasos de pressão",
+        trainingsDesc2: `Esse tipo de treinamento para operadores de vasos de pressão
+        são feitos de acordo com a norma NR13 anexo 1 do item B1.2,
+        alínea “a” que diz: “possuir certificado de treinamento de
+        segurança na operação de unidade de processo expedido por
+        instituição competente para o treinamento e comprovação de
+        pratica profissional supervisionada conforme item B1.6 deste
+        anexo;”`,
+      },
+
       contact: {
         touch: "Entre em contato !",
         contacth1: "Contato",
         contacth2:
           "Nossa equipe esta preparada para atender a sua empresa de forma ágil, confiável e transparente.",
         contactbtn: "Iniciar Conversa",
+      },
+
+      footer: {
+        address: "Endereço",
+        rights: "Todos os Direitos Reservados",
       },
     },
   },

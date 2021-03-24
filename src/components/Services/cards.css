@@ -14,16 +14,13 @@
   transform-style: preserve-3d;
   cursor: pointer;
   position: relative;
-
 }
-
 
 .card.is-flipped {
   transform: rotateY(180deg);
 }
 
 .card__face {
- 
   width: 100%;
   height: 100%;
 
@@ -37,19 +34,17 @@
 }
 
 .card__face--front {
+  background-size: cover; /* <------ */
+  background-repeat: no-repeat;
+  background-position: center center;
 
-  background-image: url(../../images/caldeiras-services.jpg)
+  background-image: url(../../images/caldeiras-services.jpg);
 }
 
 .card__face--back {
-
   transform: rotateY(180deg);
   text-align: center;
- 
-
 }
-
-
 
 /*                                               2                                  */
 .scene-2 {
@@ -68,7 +63,6 @@
   transform-style: preserve-3d;
   cursor: pointer;
   position: relative;
-  
 }
 
 .card-2.is-flipped-2 {
@@ -76,7 +70,6 @@
 }
 
 .card__face-2 {
-
   width: 100%;
   height: 100%;
   line-height: 28px;
@@ -90,20 +83,16 @@
 }
 
 .card__face--front-2 {
-  
- 
-
-  background-image: url(../../images/vasos-services.jpg)
+  background-image: url(../../images/vasos-services.jpg);
+  background-size: cover; /* <------ */
+  background-repeat: no-repeat;
+  background-position: center center;
 }
-
-
 
 .card__face--back-2 {
   line-height: 35px;
   text-align: center;
   transform: rotateY(180deg);
-  
-  
 }
 
 /*                                                 3                                   */
@@ -123,7 +112,6 @@
   transform-style: preserve-3d;
   cursor: pointer;
   position: relative;
-  
 }
 
 .card-3.is-flipped-3 {
@@ -131,10 +119,9 @@
 }
 
 .card__face-3 {
- 
   width: 100%;
   height: 100%;
-  
+
   color: white;
   text-align: center;
   font-weight: bold;
@@ -145,8 +132,10 @@
 }
 
 .card__face--front-3 {
-
-  background-image: url(../../images/tubulaçoes-services.jpg)
+  background-image: url(../../images/tubulaçoes-services.jpg);
+  background-size: cover; /* <------ */
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .card__face--back-3 {
@@ -173,18 +162,16 @@
   transform-style: preserve-3d;
   cursor: pointer;
   position: relative;
-  
 }
 
-.card-4.is-flipped-4{
+.card-4.is-flipped-4 {
   transform: rotateY(180deg);
 }
 
 .card__face-4 {
- 
   width: 100%;
   height: 100%;
-  
+
   color: white;
   text-align: center;
   font-weight: bold;
@@ -195,17 +182,18 @@
 }
 
 .card__face--front-4 {
-
-  background-image: url(../../images/tanques-services.jpg)
+  background-image: url(../../images/tanques-services.jpg);
+  background-size: cover; /* <------ */
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
-.card__face--back-4{
+.card__face--back-4 {
   line-height: 30px;
   text-align: center;
   transform: rotateY(180deg);
   overflow-y: scroll;
 }
-
 
 /*                                                 5                                   */
 .scene-5 {
@@ -224,7 +212,6 @@
   transform-style: preserve-3d;
   cursor: pointer;
   position: relative;
-  
 }
 
 .card-5.is-flipped-5 {
@@ -232,10 +219,9 @@
 }
 
 .card__face-5 {
- 
   width: 100%;
   height: 100%;
-  
+
   color: white;
   text-align: center;
   font-weight: bold;
@@ -246,17 +232,15 @@
 }
 
 .card__face--front-5 {
-
   background-image: url(../../images/solda-services.jpg);
-  background-size:cover;
+  background-size: cover;
 }
 
-.card__face--back-5{
+.card__face--back-5 {
   line-height: 30px;
   text-align: center;
   transform: rotateY(180deg);
 }
-
 
 /*                                                 8                                  */
 .scene-8 {
@@ -275,7 +259,6 @@
   transform-style: preserve-3d;
   cursor: pointer;
   position: relative;
-  
 }
 
 .card-8.is-flipped-8 {
@@ -283,10 +266,9 @@
 }
 
 .card__face-8 {
- 
   width: 100%;
   height: 100%;
-  
+
   color: white;
   text-align: center;
   font-weight: bold;
@@ -297,28 +279,17 @@
 }
 
 .card__face--front-8 {
-
   background-image: url(../../images/alteraçao-services.png);
-  background-size:cover;
+  background-size: cover;
 }
 
-.card__face--back-8{
+.card__face--back-8 {
   line-height: 30px;
   text-align: center;
   transform: rotateY(180deg);
 }
 
-
-
-
-
-
-
-
 /*                                                 ScrollBar                                  */
-
-
-
 
 /* Hide scrollbar for Chrome, Safari and Opera */
 .card__face--back-3::-webkit-scrollbar {
@@ -327,10 +298,9 @@
 
 /* Hide scrollbar for IE, Edge and Firefox */
 .card__face--back-3 {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
-
 
 /* Hide scrollbar for Chrome, Safari and Opera */
 .card__face--back-4::-webkit-scrollbar {
@@ -339,6 +309,6 @@
 
 /* Hide scrollbar for IE, Edge and Firefox */
 .card__face--back-4 {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }

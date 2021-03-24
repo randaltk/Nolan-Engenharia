@@ -1,6 +1,7 @@
 import React from "react";
 import { animateScroll as scroll } from "react-scroll";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { i18n } from "../../translate/i18n";
 import {
   FooterContainer,
   FooterWrap,
@@ -27,7 +28,7 @@ function Footer() {
         <FooterLinksContainer>
           <FooterLinksWrapper>
             <FooterLinkItems>
-              <FooterLinkTitle>Endereço </FooterLinkTitle>
+              <FooterLinkTitle>{i18n.t("footer.address")} </FooterLinkTitle>
               <FooterLink to="/">
                 R. André de Leão, 138 - Vila Socorro São Paulo - SP 04762-030
               </FooterLink>
@@ -41,7 +42,7 @@ function Footer() {
             </SocialLogo>
             <WebsiteRights>
               {" "}
-              Nolan © {new Date().getFullYear()} - Todos os Direitos Reservados
+              Nolan © {new Date().getFullYear()} - {i18n.t("footer.rights")}
             </WebsiteRights>
             <SocialIcons>
               <SocialIconLink

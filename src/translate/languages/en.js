@@ -87,12 +87,36 @@ const messages = {
         magnetic and visual inspection..
         `,
       },
+
+      trainings: {
+        trainingsTitle1: "Boiler operators",
+        trainingsDesc1: `We provide training for Boiler operators according to NR13
+        annex 1 item A1.1, item “a” which says: “have a certificate of
+        safety training in boiler operation dispatched by
+        competent institution and proof of professional practice
+        supervised according to item A1.5 of this annex;”`,
+
+        trainingsTitle2: "Pressure vessel operators",
+        trainingsDesc2: `This type of training for pressure vessel operators
+        are made in accordance with standard NR13 annex 1 of item B1.2,
+        item “a” which says: “have a training certificate for
+        safety in the operation of a process unit dispatched by
+        competent institution for the training and proof of
+        supervised professional practice as per item B1.6 of this
+        attachment;”`,
+      },
+
       contact: {
         touch: "Get in touch !",
         contacth1: "Contact",
         contacth2:
           "Our team is prepared to serve your company in an agile, reliable and transparent way.",
         contactbtn: "Start conversation",
+      },
+
+      footer: {
+        address: "Address",
+        rights: "All rights reserved",
       },
     },
   },
