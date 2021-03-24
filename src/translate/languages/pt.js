@@ -85,7 +85,7 @@ const messages = {
         `,
 
         alterationRepair: "Alteração e reparo",
-        alterationrepairDesc: `Executamos inspeções de solda como liquido penetrante, Ultrassom, partícula
+        alterationrepairDesc: `Executamos alterações e reparos como liquido penetrante, Ultrassom, partícula
         magnética e inspeção visual.
         `,
       },
