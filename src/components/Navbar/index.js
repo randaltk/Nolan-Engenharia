@@ -119,7 +119,7 @@ function Navbar({ toggle }) {
               </NavLinks>
             </NavItem>
 
-            <select value={language} onChange={handleSelectChange}>
+          {/* <select value={language} onChange={handleSelectChange}>
               <option id="BRA" value="pt-BR">
                 PT
               </option>
@@ -128,6 +128,8 @@ function Navbar({ toggle }) {
                 EN
               </option>
             </select>
+
+            */}  
           </NavMenu>
         </NavbarContainer>
       </Nav>
