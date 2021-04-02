@@ -68,6 +68,7 @@ function Contact({
                     style={wppStyle}
                     number="55-11-95166-1499"
                     message="Olá! Gostaria de obter mais informações"
+                    href="#"
                   >
                     {i18n.t("contact.contactbtn")}
                     <SocialIconLink>

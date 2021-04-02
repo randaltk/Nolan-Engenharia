@@ -13,8 +13,6 @@ import {
   NavLinks,
 } from "./styles";
 
-import LogoWeb from "../../images/nolan.jpg";
-
 import { i18n } from "../../translate/i18n";
 const I18N_STORAGE_KEY = "i18nextLng";
 
@@ -48,10 +46,15 @@ function Navbar({ toggle }) {
       <Nav scrollNav={scrollNav}>
         <NavbarContainer>
           <NavLogo to="/" onClick={toggleHome}>
-            <ImgLogo src={LogoWeb} />
+            <ImgLogo
+              alt="logoimage"
+              src={
+                "https://res.cloudinary.com/aguadeira/image/upload/v1617378253/Nolan/nolan_jh343l.jpg"
+              }
+            />
           </NavLogo>
-          <MobileIcon onClick={toggle}>
-            <FaBars />
+          <MobileIcon alt="mobilehamburguer" onClick={toggle}>
+            <FaBars alt="mobilebars" />
           </MobileIcon>
 
           <NavMenu>
@@ -119,7 +122,7 @@ function Navbar({ toggle }) {
               </NavLinks>
             </NavItem>
 
-          {/* <select value={language} onChange={handleSelectChange}>
+            {/* <select value={language} onChange={handleSelectChange}>
               <option id="BRA" value="pt-BR">
                 PT
               </option>
@@ -129,7 +132,7 @@ function Navbar({ toggle }) {
               </option>
             </select>
 
-            */}  
+            */}
           </NavMenu>
         </NavbarContainer>
       </Nav>

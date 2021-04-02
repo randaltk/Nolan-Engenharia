@@ -16,7 +16,7 @@ import {
   ArrowForward,
   ArrowRight,
 } from "./styles";
-import Video from "../../images/hero-img.jpg";
+
 import { Button } from "../ButtonComponent";
 
 import { i18n } from "../../translate/i18n";
@@ -34,7 +34,12 @@ function HeroSection() {
   return (
     <HeroContainer id="home" data-aos="zoom-out-down ease-in-out-sine">
       <HeroBg>
-        <VideoBg src={Video} />
+        <VideoBg
+          alt="heroimage"
+          src={
+            "https://res.cloudinary.com/aguadeira/image/upload/v1617378256/Nolan/hero-img_fofrpp.jpg"
+          }
+        />
       </HeroBg>
 
       <HeroContent>
