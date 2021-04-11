@@ -48,9 +48,7 @@ function Navbar({ toggle }) {
           <NavLogo to="/" onClick={toggleHome}>
             <ImgLogo
               alt="logoimage"
-              src={
-                "https://res.cloudinary.com/aguadeira/image/upload/v1617378253/Nolan/nolan_jh343l.jpg"
-              }
+              src={process.env.PUBLIC_URL + "nolan.webp"}
             />
           </NavLogo>
           <MobileIcon alt="mobilehamburguer" onClick={toggle}>

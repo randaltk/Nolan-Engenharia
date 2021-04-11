@@ -36,9 +36,7 @@ function HeroSection() {
       <HeroBg>
         <VideoBg
           alt="heroimage"
-          src={
-            "https://res.cloudinary.com/aguadeira/image/upload/v1617378256/Nolan/hero-img_fofrpp.jpg"
-          }
+          src={process.env.PUBLIC_URL + "hero-img.webp"}
         />
       </HeroBg>
 

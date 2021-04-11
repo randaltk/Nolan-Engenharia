@@ -9,7 +9,7 @@ export const homeObjOne = {
   headline: `${i18n.t("about.abouth1")}`,
   description: `${i18n.t("about.abouth2")}`,
   imgStart: false,
-  img: require("../../images/nolan-section.jpg"),
+  img: (process.env.PUBLIC_URL + "nolan-section.webp"),
   alt: "Car",
   dark: true,
   primary: true,
@@ -26,7 +26,7 @@ export const homeObjTwo = {
   description: `${i18n.t("enterprise.enterpriseh2")}`,
 
   imgStart: true,
-  img: require("../../images/icon-nr13.png"),
+  img: (process.env.PUBLIC_URL + "icon-nr13.webp"),
   alt: "Car",
   dark: false,
   primary: true,

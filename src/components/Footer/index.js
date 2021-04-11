@@ -21,6 +21,7 @@ import {
 function Footer() {
   const toggleHome = () => {
     scroll.scrollToTop();
+    
   };
   return (
     <FooterContainer>
